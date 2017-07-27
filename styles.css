@@ -130,7 +130,7 @@ footer {
 
 	.logo {
 		display: inline-block;
-		height: 100px;
+		height: 120px;
 		width: 300px;
 		margin-top: 75px;
 		border: 5px solid rgba(255,255,255,1);
@@ -143,7 +143,7 @@ footer {
 	.box p.expertise {
 		font-family: 'Josefin Sans', sans-serif;
 		padding-top: 5px;
-		font-size: 10px;
+		font-size: 20px;
 		color: rgba(255,255,255,1);
 	}
 
@@ -172,7 +172,7 @@ footer {
 @media (max-width: 479px){
 	.logo {
 		display: inline-block;
-		height: 100px;
+		height: 120px;
 		width: 300px;
 		margin-top: 200px;
 		border: 5px solid rgba(255,255,255,1);
@@ -185,7 +185,7 @@ footer {
 	.box p.expertise {
 		font-family: 'Josefin Sans', sans-serif;
 		padding-top: 5px;
-		font-size: 10px;
+		font-size: 20px;
 		color: rgba(255,255,255,1);
 	}
 
