@@ -1,0 +1,192 @@
+/*******FORM*******/
+.form {
+	position: absolute;
+	top: 0;
+	padding-top: 25vh;
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s ease-in-out;
+	background-color: rgba(0,0,0,0.8);
+}
+form {
+	position: relative;
+}
+.col {
+	font-family: 'Josefin Sans', sans-serif;
+	display: inline-block;
+	width: 305px;	
+	border: none;
+}
+.msg {
+	clear: both;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    padding-top: 4px;
+
+}
+input#email, input#name {
+	border: none;
+	font-family: 'Josefin Sans', sans-serif;
+	width: 305px;
+	height: 50px;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+	font-weight: 700;
+	padding-left: 10px;
+}
+textarea#msg {
+	font-family: 'Josefin Sans', sans-serif;
+    width: 615px;
+    height: 300px;
+    font-size: 20px;
+    border: none;
+    padding-top: 3px;
+    padding-left: 10px;
+    color: rgba(0,0,0,1);
+	font-weight: 700;
+}
+.button	{
+	width: 100%;
+	padding-right: 465px;
+}
+button.send {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	width: 150px;
+	height: 50px;
+	padding-top: 5px;
+	border: none;
+	background-color: rgba(255,255,255,1);
+	font-weight: 700;
+	margin-bottom: 2vh;
+	transition: 0.125s 0s all ease-in-out;
+}
+button.send:hover {
+	background-color: rgba(0,0,0,1);
+	color: rgba(255,255,255,1);
+	border: 1px solid rgba(255,255,255,1);
+	cursor: pointer;
+}
+i.fa.fa-times {
+	height: 64px;
+    width: 64px;;
+	transition: 0.125s 0s all ease-in-out;
+}
+i.fa.fa-times:hover {
+	color: rgba(0,0,0,1);
+	box-shadow: inset 0px 0px 20px 20px rgba(255,255,255,1);
+}
+input:focus:invalid {
+  	box-shadow: inset 0px 0px 20px 1px rgba(255,0,0,1);
+}
+input:focus:invalid, textarea:focus, input:focus {
+  	outline: none;
+}
+
+/*RESPONSIVE*/
+/*For Devices with width between 480px-767px*/
+@media (min-width: 480px) and (max-width: 767px){
+	form {
+		position: relative;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	.form {
+		padding-top: 0;
+	}
+	.col {
+		font-family: 'Josefin Sans', sans-serif;
+		display: inline-block;
+		width: 100%;
+		border: none;
+	}
+	.msg {
+		clear: both;
+		display: inline-block;
+	    font-family: 'Josefin Sans', sans-serif;
+	    width: 100%;
+	    padding-top: 3px;
+
+	}
+	input#email, input#name {
+		border: none;
+		font-family: 'Josefin Sans', sans-serif;
+		width: 100%;
+		height: 30px;
+		font-size: 16px;
+		margin-top: 3px;
+	}
+	textarea#msg {
+		font-family: 'Josefin Sans', sans-serif;
+	    width: 100%;
+	    height: 60px;
+	    font-size: 16px;
+	    border: none;
+	}
+	.button	{
+		width: 100%;
+		padding: 0;
+
+	}
+	button.send {
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 16px;
+		width: 100%;
+		height: 30px;
+		border: none;
+		background-color: rgba(255,255,255,1);
+		font-weight: 700;
+		margin-bottom: 10vh;
+	}
+}
+
+/*For Devices with width under 479px*/	
+@media (max-width: 479px){
+	form {
+		position: relative;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	.col {
+		font-family: 'Josefin Sans', sans-serif;
+		display: inline-block;
+		width: 100%;
+		border: none;
+	}
+	.msg {
+		clear: both;
+		display: inline-block;
+	    font-family: 'Josefin Sans', sans-serif;
+	    width: 100%;
+	    padding-top: 3px;
+
+	}
+	input#email, input#name {
+		border: none;
+		font-family: 'Josefin Sans', sans-serif;
+		width: 100%;
+		height: 30px;
+		font-size: 16px;
+		margin-top: 3px;
+	}
+	textarea#msg {
+		font-family: 'Josefin Sans', sans-serif;
+	    width: 100%;
+	    height: 60px;
+	    font-size: 16px;
+	    border: none;
+	}
+	.button	{
+		width: 100%;
+		padding: 0;
+	}
+	button.send {
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 16px;
+		width: 100%;
+		height: 30px;
+		border: none;
+		background-color: rgba(255,255,255,1);
+		font-weight: 700;
+	}
+}
