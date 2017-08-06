@@ -8,14 +8,25 @@
 	<meta name="keywords" content="Emilie, Durville, Dance Mentoring, Dancing, Coaching, Teaching, Montreal">
 <title>Emilie Durville</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="stylesheet" type="text/css" href="../form.css">
+<link rel="stylesheet" type="text/css" href="form.css">
 <link rel="icon" href="EM.png">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,700|Poiret+One" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="container">
+	<div class="form" style="opacity: 0; display: none;">	
+			<form id="gform" action="https://script.google.com/macros/s/AKfycbxT2Tlsj5SRJFEKUM9XYdPGI02ygW1pwyyVpZxBhG2jMQ71REBp/exec" method="post"> 
+				<div class="col"><input type="text" id="name" placeholder="FULL NAME" name="name" required /></div>
+			  	<div class="col"><input type="email" id="email" placeholder="EMAIL ADDRESS" name="email" required /><span id="email-invalid" style="display:none"></div>
+			  	<div class="msg"><textarea id="message" placeholder="YOUR MESSAGE" name="message" rows="10"></textarea></div>
+				<div class="button"><button class="send">SEND</div>
+				<div class="close"><i class="fa fa-times fa-4x" aria-hidden="true"></i></div>
+	</div>
 	<div class="bg-img">
+		<div class="thanks" style="display: none;" id="thankyou_message"><h2>Your message has been sent.<br>Thanks for reaching out!</h2>
+			<div class="close"><i class="fa fa-times fa-4x" aria-hidden="true"></i></div>
+		</div>
 		<div class="outer-box" style="visibility: hidden">
 			<div class="box">
 				<div class="logo">
@@ -47,9 +58,10 @@
 		</div>	
 	</div>	
 </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.1/vivus.min.js"></script>
 <script src="script.js"></script>
+<script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 </html>

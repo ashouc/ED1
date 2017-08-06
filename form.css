@@ -34,14 +34,15 @@ input#email, input#name {
 	font-weight: 700;
 	padding-left: 10px;
 }
-textarea#msg {
+textarea#message {
 	font-family: 'Josefin Sans', sans-serif;
     width: 615px;
     height: 300px;
     font-size: 20px;
     border: none;
-    padding-top: 3px;
+    padding-top: 13px;
     padding-left: 10px;
+    padding-right: 10px;
     color: rgba(0,0,0,1);
 	font-weight: 700;
 }
@@ -82,6 +83,21 @@ input:focus:invalid {
 input:focus:invalid, textarea:focus, input:focus {
   	outline: none;
 }
+.thanks {
+	position: absolute;
+    top: 15px;
+    width: 100%;
+    color: rgba(255,255,255,1);
+    background-color: rgba(0,0,0,0.8);
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    text-transform: uppercase;
+}
+h2{
+	font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    line-height: 150%;
+}
 
 /*RESPONSIVE*/
 /*For Devices with width between 480px-767px*/
@@ -92,7 +108,7 @@ input:focus:invalid, textarea:focus, input:focus {
 		padding-right: 3px;
 	}
 	.form {
-		padding-top: 0;
+		padding-top: 15vh;
 	}
 	.col {
 		font-family: 'Josefin Sans', sans-serif;
@@ -116,10 +132,10 @@ input:focus:invalid, textarea:focus, input:focus {
 		font-size: 16px;
 		margin-top: 3px;
 	}
-	textarea#msg {
+	textarea#message {
 		font-family: 'Josefin Sans', sans-serif;
 	    width: 100%;
-	    height: 60px;
+	    height: 90px;
 	    font-size: 16px;
 	    border: none;
 	}
@@ -136,7 +152,6 @@ input:focus:invalid, textarea:focus, input:focus {
 		border: none;
 		background-color: rgba(255,255,255,1);
 		font-weight: 700;
-		margin-bottom: 10vh;
 	}
 }
 
@@ -169,10 +184,10 @@ input:focus:invalid, textarea:focus, input:focus {
 		font-size: 16px;
 		margin-top: 3px;
 	}
-	textarea#msg {
+	textarea#message {
 		font-family: 'Josefin Sans', sans-serif;
 	    width: 100%;
-	    height: 60px;
+	    height: 90px;
 	    font-size: 16px;
 	    border: none;
 	}
@@ -188,5 +203,8 @@ input:focus:invalid, textarea:focus, input:focus {
 		border: none;
 		background-color: rgba(255,255,255,1);
 		font-weight: 700;
+	}
+	h2 {
+		font-size: 20px;
 	}
 }

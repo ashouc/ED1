@@ -6,6 +6,8 @@ function start() {
 	clickForm();
 }
 
+var indicator = false;
+
 function intro() {
 	setTimeout(function(){
 		$('.outer-box').css({
@@ -40,16 +42,7 @@ function clickForm(){
 }
 
 function addForm(){
-	$('.container').append(`
-		<div class="form" style="opacity: 0">	
-			<form action="index.html" method="post"> 
-				<div class="col"><input type="text" id="name" placeholder="FULL NAME" name="user_name" required /></div>
-			  	<div class="col"><input type="email" id="email" placeholder="EMAIL ADDRESS" name="user_email" required /></div>
-			  	<div class="msg"><textarea id="msg" placeholder="YOUR MESSAGE" name="user_message" maxlength="200" rows="5"></textarea></div>
-				<div class="button"><button class="send">SEND</div>
-				<div class="close"><i class="fa fa-times fa-4x" aria-hidden="true"></i></div>
-		</div>`
-	);
+	$('.form').css('display','block');
 	setTimeout(function(){
 		$('.form').css('opacity', '1')
 	},250);
@@ -79,12 +72,17 @@ function validate(){
 function reset(){
 	$('#email').off();
 	$('#name').off();
-	$('i.fa.fa-times.fa-4x').one('click',function(){
+	$('i.fa.fa-times.fa-4x').one('click',function(event){
+		if( $('#thankyou_message').css('display','block') ) {
+			$('#thankyou_message').css('display','none');
+		}
 		$('.form').css({
 			opacity:'0',
 		});
 		setTimeout(function(){
-			$('div.form').remove();
+			if( $('div.form').css('display','block') ) {
+				$('div.form').css('display','none');
+			}
 		},500);
 	});
 }
