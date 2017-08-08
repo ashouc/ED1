@@ -115,14 +115,29 @@ a:hover, i:hover {
 	position: absolute;
     top: 10px;
     right: 10px;
+    background-color: rgba(255,255,255,1);
+    width: 120px;
+    padding: 10px 0 10px;
+	transition: 0.125s 0s all ease-in-out;
+    border-radius: 1px;
 }
 
 .contact p {
-	color: white;
+	color: rgba(0,0,0,1);
     font-size: 26px;
+    font-weight: 700;
+    vertical-align: middle;
 }
-.contact p:hover {
+
+.contact:hover {
+	background-color: rgba(0,0,0,1);
+	border: 1px solid rgba(255,255,255,1);
 	cursor: pointer;
+}
+
+.contact p:hover {
+	color: rgba(255,255,255,1);
+	
 }
 
 

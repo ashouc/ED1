@@ -100,7 +100,7 @@ h2{
     line-height: 150%;
 }
 
-/*RESPONSIVE*/
+/******RESPONSIVE******/
 /*For Devices with width between 480px-767px*/
 @media (min-width: 480px) and (max-width: 767px){
 	form {
