@@ -74,8 +74,7 @@ html, body {
 	text-align: center;
 	font-size: 24px;
 	width: 40%;
-	margin-bottom: 30px;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 .social-media.fa, .mentorly {
 	
@@ -87,7 +86,7 @@ html, body {
 	padding-right: 5px;
 	padding-left: 5px;
 }
-.icon:nth-child(4) {
+.icon:nth-child(1) { /*Mentorly icon*/
 	height: 34px;
 	vertical-align: middle;
 }
@@ -111,6 +110,22 @@ a:hover, i:hover {
 	color: rgba(255,255,255,0.75);
 }
 
+/*******CONTACT*******/
+.contact {
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.contact p {
+	color: white;
+    font-size: 26px;
+}
+.contact p:hover {
+	cursor: pointer;
+}
+
+
 /*******FOOTER*******/
 footer {
 	position: absolute;
@@ -125,11 +140,16 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 9px;
+    font-weight: 700;
     text-align: center;
 }
 .footer-row {
     margin-right: 1%;
     margin-left: 1%;
+}
+i.fa.fa-code.fa-2x {
+	vertical-align: middle;
+	font-weight: 700;
 }
 
 /*******RESPONSIVE*******/
@@ -167,6 +187,9 @@ footer {
 	}
 	.social-media {
     	width: 100%;
+	}
+	.contact p {
+    	font-size: 22px;
 	}
 
 	.footer-inner {
@@ -212,6 +235,9 @@ footer {
 	}
 	.social-media {
     	width: 100%;
+	}
+	.contact p {
+    	font-size: 22px;
 	}
 	.footer-inner {
 		color: rgba(255,255,255,1);

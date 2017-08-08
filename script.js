@@ -35,7 +35,7 @@ function footerFix() {
 }
 
 function clickForm(){
-	$('body > div > div > div > div:nth-child(3) > div > div:nth-child(5) > i').on('click',function() {
+	$('body > div > div.bg-img > div.outer-box > div:nth-child(1) > div.contact > p').on('click',function() {
 		$('.bg-img').css('transition','all 0.5s ease-in-out');
 		addForm();	
 	});
