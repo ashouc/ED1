@@ -6,8 +6,6 @@ function start() {
 	clickForm();
 }
 
-var indicator = false;
-
 function intro() {
 	setTimeout(function(){
 		$('.outer-box').css({
@@ -35,7 +33,7 @@ function footerFix() {
 }
 
 function clickForm(){
-	$('body > div > div.bg-img > div.outer-box > div:nth-child(1) > div.contact > p').on('click',function() {
+	$('body > div > div.bg-img > div.outer-box > div:nth-child(1) > div.contact').on('click',function() {
 		$('.bg-img').css('transition','all 0.5s ease-in-out');
 		addForm();	
 	});
