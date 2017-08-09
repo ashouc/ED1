@@ -15,14 +15,14 @@ form {
 .col {
 	font-family: 'Josefin Sans', sans-serif;
 	display: inline-block;
-	width: 305px;	
+	width: 305px;
 	border: none;
 }
 .msg {
 	clear: both;
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
-    padding-top: 4px;
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  padding-top: 4px;
 
 }
 input#email, input#name {
@@ -37,14 +37,14 @@ input#email, input#name {
 }
 textarea#message {
 	font-family: 'Josefin Sans', sans-serif;
-    width: 615px;
-    height: 300px;
-    font-size: 20px;
-    border: none;
-    padding-top: 13px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: rgba(0,0,0,1);
+  width: 615px;
+  height: 300px;
+  font-size: 20px;
+  border: none;
+  padding-top: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgba(0,0,0,1);
 	font-weight: 700;
 }
 .button	{
@@ -71,7 +71,7 @@ button.send:hover {
 }
 i.fa.fa-times {
 	height: 64px;
-    width: 64px;;
+  width: 64px;;
 	transition: 0.125s 0s all ease-in-out;
 }
 i.fa.fa-times:hover {
@@ -79,25 +79,26 @@ i.fa.fa-times:hover {
 	box-shadow: inset 0px 0px 20px 20px rgba(255,255,255,1);
 }
 input:focus:invalid {
-  	box-shadow: inset 0px 0px 20px 1px rgba(255,0,0,1);
+	box-shadow: inset 0px 0px 20px 1px rgba(255,0,0,1);
 }
 input:focus:invalid, textarea:focus, input:focus {
-  	outline: none;
+	outline: none;
 }
 .thanks {
 	position: absolute;
-    top: 15px;
-    width: 100%;
-    color: rgba(255,255,255,1);
-    background-color: rgba(0,0,0,0.8);
-    padding-bottom: 5vh;
-    padding-top: 5vh;
-    text-transform: uppercase;
+  top: 10px;
+  width: 100%;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.8);
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+  text-transform: uppercase;
+	z-index: 100;
 }
 h2{
 	font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    line-height: 150%;
+  font-weight: 700;
+  line-height: 150%;
 }
 
 /******RESPONSIVE******/
@@ -156,7 +157,7 @@ h2{
 	}
 }
 
-/*For Devices with width under 479px*/	
+/*For Devices with width under 479px*/
 @media (max-width: 479px){
 	form {
 		position: relative;
